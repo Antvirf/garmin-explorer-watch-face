@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Properties and their default values -->
+    <properties> 
+        <property id="top_complication" type="number">0</property>
+        <property id="bot_complication" type="number">4</property>
+        <property id="complication_location" type="number">1</property>
+        <property id="top_numeric" type="number">0</property>
+        <property id="date_format" type="number">0</property>
+        <property id="gauges_enabled" type="number">1</property>
+        <property id="edge_hash_marks" type="number">0</property>
+        <property id="hour_hand_style" type="number">0</property>
+    </properties>
+    
+    <strings>
+        <string id="complication_title_top">Top field</string>
+        <string id="complication_title_bot">Bottom field</string>
+        <string id="complication_title_location">Datafield location</string>
+        <string id="date">Date</string>
+        <string id="battery">Battery %</string>
+        <string id="heartrate">Heartrate</string>
+        <string id="steps">Today's steps</string>
+        <string id="blank">Blank</string>
+        <string id="rotate">Rotate with hands</string>
+        <string id="twelve">12 o'clock</string>
+        <string id="three">3 o'clock</string>
+        <string id="six">6 o'clock</string>
+        <string id="nine">9 o'clock</string>
+        <string id="top_symbol_numeric">Numeric 12</string>
+        <string id="top_symbol_triangle">Upside-down triangle</string>
+        <string id="top_symbol_title">12 o'clock indicator</string>
+        <string id="date_format_title">Date format</string>
+        <string id="date_format_ddmm">dd/mm: 31/12</string>
+        <string id="date_format_mmdd">mm/dd: 12/31</string>
+        <string id="gauges_enabled">Battery and step goal gauges</string>
+        <string id="gauges_on">Enabled</string>
+        <string id="gauges_off">Disabled</string>
+        <string id="edge_hash_marks_enabled">Draw minute marks at dial edge?</string>
+        <string id="edges_yes">Yes</string>
+        <string id="edges_no">No</string>
+        <string id="hour_hand_style">Hour hand style</string>
+        <string id="hour_hand_style_arrow">Arrow</string>
+        <string id="hour_hand_style_circle">Circle</string>
+
+    </strings>
+    
+    <settings>
+        <setting propertyKey="@Properties.top_numeric" title="@Strings.top_symbol_title">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.top_symbol_triangle</listEntry>
+                <listEntry value="1">@Strings.top_symbol_numeric</listEntry>
+            </settingConfig>
+        </setting>
+    
+        <setting propertyKey="@Properties.date_format" title="@Strings.date_format_title">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.date_format_ddmm</listEntry>
+                <listEntry value="1">@Strings.date_format_mmdd</listEntry>
+            </settingConfig>
+        </setting>
+    
+        <setting propertyKey="@Properties.complication_location" title="@Strings.complication_title_location">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.rotate</listEntry>
+                <listEntry value="1">@Strings.twelve</listEntry>
+                <listEntry value="2">@Strings.three</listEntry>
+                <listEntry value="3">@Strings.six</listEntry>
+                <listEntry value="4">@Strings.nine</listEntry>
+            </settingConfig>
+        </setting>
+    
+        <setting propertyKey="@Properties.top_complication" title="@Strings.complication_title_top">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.date</listEntry>
+                <listEntry value="1">@Strings.battery</listEntry>
+                <listEntry value="2">@Strings.heartrate</listEntry>
+                <listEntry value="3">@Strings.steps</listEntry>
+                <listEntry value="4">@Strings.blank</listEntry>
+            </settingConfig>
+        </setting>
+        
+        <setting propertyKey="@Properties.bot_complication" title="@Strings.complication_title_bot">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.date</listEntry>
+                <listEntry value="1">@Strings.battery</listEntry>
+                <listEntry value="2">@Strings.heartrate</listEntry>
+                <listEntry value="3">@Strings.steps</listEntry>
+                <listEntry value="4">@Strings.blank</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.gauges_enabled" title="@Strings.gauges_enabled">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.gauges_on</listEntry>
+                <listEntry value="1">@Strings.gauges_off</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.edge_hash_marks" title="@Strings.edge_hash_marks_enabled">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.edges_yes</listEntry>
+                <listEntry value="1">@Strings.edges_no</listEntry>
+            </settingConfig>
+        </setting>
+
+        <setting propertyKey="@Properties.hour_hand_style" title="@Strings.hour_hand_style">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.hour_hand_style_circle</listEntry>
+                <listEntry value="1">@Strings.hour_hand_style_arrow</listEntry>
+            </settingConfig>
+        </setting>
+
+    </settings>
+</resources>
