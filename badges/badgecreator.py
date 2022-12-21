@@ -27,7 +27,7 @@ def create_badge(text, value):
 
 if __name__ == "__main__":
     text = requests.get(
-        r"https://apps.garmin.com/en-US/apps/38b1b25e-3cf7-4993-9fd9-7ced64eb3564"
+        r"https://apps.garmin.com/en-US/apps/4e26376f-806a-4ce7-8bd1-07ad82e52540"
     ).text
 
     try:
